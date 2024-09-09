@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #171717;
+  --white: #fcfcf7;
+  --accent: #4cbb17;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Bebas Neue;
+  font-weight: 400;
+}
+
+body {
+  font-size: 25px;
+  font-family: Oswald;
+}
+
+.green-button {
+  font-family: Bebas Neue;
+  padding: 2px 40px;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--accent);
+  font-size: 25px;
+  width: fit-content;
+}

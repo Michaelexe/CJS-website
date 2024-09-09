@@ -1,0 +1,82 @@
+.intro {
+  position: relative;
+  background-image: url("../images/home-image.png");
+  height: 80dvh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  z-index: 1;
+}
+
+.intro__text h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.intro__text p {
+  font-size: 25px;
+}
+
+.intro__text button {
+  border: none;
+  background-color: var(--accent);
+  font-family: Bebas Neue;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 40px;
+  padding: 2px 40px;
+  text-transform: uppercase;
+}
+
+.home__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0px;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  width: calc(100% - 10px);
+  gap: 40px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__text h2 {
+  font-size: 30px;
+  border-bottom: 4px solid var(--accent);
+  display: block;
+  width: fit-content;
+}
+
+.about__video {
+  background-color: gray;
+}
