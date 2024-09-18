@@ -11,6 +11,8 @@
   --black: #171717;
   --white: #fcfcf7;
   --accent: #4cbb17;
+  --swiper-navigation-sides-offset: -20px;
+  --swiper-navigation-color: #171717;
 }
 
 h1,
@@ -26,6 +28,7 @@ h6 {
 body {
   font-size: 25px;
   font-family: Oswald;
+  background-color: var(--white);
 }
 
 .green-button {
