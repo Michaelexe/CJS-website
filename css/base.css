@@ -25,7 +25,13 @@ h6 {
   font-weight: 400;
 }
 
+textarea,
+input {
+  font-family: inherit;
+}
+
 body {
+  padding-top: 80px;
   font-size: 25px;
   font-family: Oswald;
   background-color: var(--white);

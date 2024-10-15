@@ -1,0 +1,80 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.contact .header {
+  border-bottom: 4px solid var(--accent);
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.contact .container {
+  max-width: 1300px;
+  width: calc(100% - 10px);
+}
+
+.contact .container .contact-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  background-image: url(../images/contact-bg.jpg);
+  padding: 60px 0px;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact .container .contact-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact .container .contact-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 4px solid var(--accent);
+  padding: 0px 60px;
+  z-index: 2;
+}
+
+.contact .container .contact-container .form input,
+.contact .container .contact-container .form textarea {
+  padding: 10px 20px;
+  font-size: 25px;
+  resize: none;
+  border: none;
+}
+
+.contact .container .contact-container .form button {
+  margin: 0 auto;
+  padding: 5px 50px;
+  font-size: 30px;
+}
+
+.contact .container .contact-container .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.contact .container .contact-container .contact-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.contact .container .contact-container .contact-info > div svg {
+  fill: var(--accent);
+}
