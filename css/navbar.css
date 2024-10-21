@@ -52,3 +52,24 @@
   color: white;
   scale: 1.05;
 }
+
+.navbar .menu {
+  height: 65px;
+  width: 65px;
+  color: var(--white);
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar button {
+    display: none;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar .menu {
+    display: block;
+  }
+}

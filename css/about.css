@@ -32,7 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 0px;
+  margin-top: 120px;
 }
 
 .about__container {
@@ -62,4 +62,186 @@
 
 .about__image img {
   width: 100%;
+}
+
+.about__achievements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 120px;
+}
+
+.about__achievements .header {
+  border-bottom: 4px solid var(--accent);
+  width: fit-content;
+  margin: 0 auto 40px auto;
+}
+
+.about__achievements .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  width: calc(100% - 10px);
+}
+
+.about__achievements .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about__achievements .card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 5/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 30px 0 30px;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about__achievements .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.about__achievements .card svg,
+.about__achievements .card h2,
+.about__achievements .card p {
+  z-index: 2;
+  text-align: center;
+}
+
+.about__achievements .card svg {
+  height: 80px;
+  width: 80px;
+}
+
+.about__achievements .card h2 {
+  border-bottom: 4px solid var(--accent);
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about__achievements .card p {
+  font-size: 25px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 9));
+  }
+}
+
+.about__slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 40px;
+  margin-top: 120px;
+}
+
+.about__slider .header {
+  margin: 0 auto;
+  border-bottom: 4px solid var(--accent);
+}
+
+.about__slider::before,
+.about__slider::after {
+  background: linear-gradient(
+    to left,
+    rgba(252, 252, 252, 0) 0%,
+    rgba(252, 252, 252, 1) 100%
+  );
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 250px;
+  z-index: 2;
+}
+
+.about__slider::before {
+  bottom: 0;
+  left: 0;
+}
+
+.about__slider::after {
+  bottom: 0;
+  right: 0;
+  transform: rotateZ(180deg);
+}
+
+.about__slider .slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(300px * 18);
+  height: 150px;
+}
+
+.about__slider .slide {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100%;
+}
+
+.about__slider .slide img {
+  height: 100%;
+}
+
+.about__highlights {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0;
+}
+
+.about__highlights .container {
+  max-width: 1300px;
+  width: calc(100% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.about__highlights .header {
+  border-bottom: 4px solid var(--accent);
+  margin: 0 auto 40px auto;
+  width: fit-content;
+}
+
+.about__highlights .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px;
+  gap: 20px;
+}
+
+.about__highlights .grid div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid var(--black);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about__highlights .grid .wide {
+  grid-column: span 2;
 }
