@@ -69,3 +69,30 @@ footer .container .nav-links a {
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (max-width: 600px) {
+  footer {
+    padding: 40px 10px;
+  }
+
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+
+  footer .container .column {
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .container .contact-info {
+    gap: 50px;
+    border-right: none;
+    border-top: 4px solid var(--accent);
+    border-bottom: 4px solid var(--accent);
+    padding: 40px;
+  }
+
+  footer .container .nav-links {
+    gap: 20px;
+  }
+}

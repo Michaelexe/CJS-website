@@ -94,6 +94,9 @@
 
 .about__achievements .card {
   position: relative;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
   background-size: cover;
   background-position: center;
   aspect-ratio: 5/4;
@@ -244,4 +247,66 @@
 
 .about__highlights .grid .wide {
   grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+  .about__intro h1 {
+    font-size: 45px;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+
+  .about__text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__image {
+    grid-row: 1/2;
+  }
+
+  .about__achievements .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__achievements .grid .card {
+    padding: 20px 10px;
+    gap: 10px;
+    aspect-ratio: unset;
+  }
+
+  .about__achievements .grid .card svg {
+    height: 60px;
+    width: 60px;
+  }
+
+  .about__achievements .grid .card h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .about__achievements .grid .card p {
+    font-size: 18px;
+  }
+
+  .about__slider .slide-track {
+    height: 100px;
+  }
+
+  .about__slider .slide-track .slide {
+    width: 200px;
+  }
+
+  .about__slider::before,
+  .about__slider::after {
+    height: 100px;
+    width: 100px;
+  }
+
+  .about__highlights .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 }
