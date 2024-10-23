@@ -195,13 +195,7 @@
     </section>
     <section class="home__testimonials">
       <h1 class="header">Testimonials</h1>
-      <swiper-container
-        slides-per-view="3"
-        autoplay="true"
-        loop="true"
-        class="testimonial-swiper"
-        breakpoints="{600: {slides-per-view: 1} 800: {slides-per-view: 2}}"
-      >
+      <swiper-container autoplay="true" loop="true" class="testimonial-swiper">
         <swiper-slide>
           <div class="testimonial-card">
             <div class="person">
@@ -494,5 +488,21 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+      const swiperEl = document.querySelector(".testimonial-swiper");
+      Object.assign(swiperEl, {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        breakpoints: {
+          700: {
+            slidesPerView: 2,
+          },
+          1100: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      swiperEl.initialize();
+    </script>
   </body>
 </html>
