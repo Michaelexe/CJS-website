@@ -88,6 +88,9 @@
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    padding: 0px 15px;
+  }
   .navbar button {
     display: none;
   }
