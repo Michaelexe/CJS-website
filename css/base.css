@@ -43,6 +43,8 @@ body {
   font-size: 25px;
   width: fit-content;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  color: var(--black);
 }
 
 @media (max-width: 600px) {

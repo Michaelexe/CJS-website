@@ -24,9 +24,9 @@
       <div class="navbar__links">
         <a href="../index.html">Home</a>
         <a href="./about.html">About Me</a>
-        <a href="./services.html" class="active">Services</a>
+        <a class="active">Services</a>
       </div>
-      <button type="button">Contact Us</button>
+      <a href="#contact" type="button" class="button">Contact Us</a>
       <svg
         viewBox="0 0 24 24"
         fill="none"
@@ -252,21 +252,40 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <h1 class="header">Contact Us</h1>
         <div class="contact-container">
-          <div class="form">
-            <input type="text" placeholder="Full Name" required />
-            <input type="text" placeholder="Email Address" required />
-            <input type="text" placeholder="Phone Number" required />
+          <form class="form">
+            <input
+              name="Full Name"
+              type="text"
+              placeholder="Full Name"
+              pattern="^[a-zA-Z\s]+$"
+              required
+            />
+            <input
+              name="Email Address"
+              type="email"
+              placeholder="Email Address"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              required
+            />
+            <input
+              name="Phone Number"
+              type="text"
+              placeholder="Phone Number"
+              pattern="^(\+?[1-9]\d{1,14})?$"
+              required
+            />
             <textarea
-              name=""
+              name="Description"
               placeholder="Description (Training goals, timings, etc.)"
               rows="5"
+              required
             ></textarea>
-            <button class="green-button">Submit</button>
-          </div>
+            <button class="green-button" type="submit">Submit</button>
+          </form>
           <div class="contact-info">
             <div>
               <svg
@@ -419,14 +438,44 @@
           </div>
         </div>
         <div class="column nav-links">
-          <a href=""> Home </a>
-          <a href=""> About Us </a>
-          <a href=""> Services </a>
-          <a href=""> Location </a>
+          <a href="../index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a>Services</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </footer>
     <script src="../js/accordion.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top - 100,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
   </body>
 </html>

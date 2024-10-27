@@ -36,9 +36,11 @@
   border-bottom: 4px solid var(--accent);
 }
 
-.navbar button {
+.navbar .button {
+  text-decoration: none;
   padding: 5px 20px;
   background-color: var(--white);
+  color: var(--black);
   font-weight: 400;
   font-size: 1.3rem;
   font-family: Oswald;
@@ -47,7 +49,7 @@
   cursor: pointer;
 }
 
-.navbar button:hover {
+.navbar .button:hover {
   background-color: var(--accent);
   color: white;
   scale: 1.05;
@@ -91,7 +93,7 @@
   .navbar {
     padding: 0px 15px;
   }
-  .navbar button {
+  .navbar .button {
     display: none;
   }
 
