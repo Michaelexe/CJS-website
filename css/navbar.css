@@ -60,6 +60,33 @@
   display: none;
 }
 
+.navbar .menu-dropdown {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu-dropdown a {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: var(--black);
+  font-size: 25px;
+  text-decoration: none;
+  border-bottom: 2px solid lightgray;
+}
+
+.navbar .menu-dropdown .active {
+  color: var(--accent);
+  font-size: 26px;
+}
+
 @media (max-width: 600px) {
   .navbar button {
     display: none;
