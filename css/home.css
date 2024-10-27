@@ -58,7 +58,7 @@
   display: grid;
   grid-template-columns: 4fr 5fr;
   max-width: 1300px;
-  width: calc(100% - 30px);
+  width: calc(100% - 40px);
   gap: 40px;
 }
 
@@ -96,7 +96,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1300px;
-  width: calc(100% - 20px);
+  width: calc(100% - 30px);
   gap: 20px;
 }
 
@@ -199,6 +199,9 @@
 }
 
 @media (max-width: 600px) {
+  .intro {
+    background-position: 45% 0%;
+  }
   .intro .intro__text h1 {
     font-size: 45px;
   }
@@ -248,14 +251,14 @@
   }
 
   .home__testimonials .testimonial-swiper {
-    padding: 0px 5px;
+    padding: 0px 7.5px;
     margin-bottom: -20px;
   }
 
   .home__testimonials .testimonial-swiper .testimonial-card {
     display: flex;
     flex-direction: column;
-    margin: 20px 5px;
+    margin: 20px 7.5px;
     padding: 20px 15px;
     height: 250px;
     gap: 10px;
