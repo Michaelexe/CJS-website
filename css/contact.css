@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px 0px;
+  margin: 120px 0px;
 }
 
 .contact .header {
@@ -13,7 +13,7 @@
 
 .contact .container {
   max-width: 1300px;
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
 }
 
 .contact .container .contact-container {
@@ -98,7 +98,7 @@
   }
 
   .contact .container .contact-container .form {
-    width: calc(100% - 20px);
+    width: calc(100% - 30px);
     padding: 20px 0px;
     border-right: none;
     border-bottom: 4px solid var(--accent);
@@ -107,5 +107,10 @@
   .contact .container .contact-container .contact-info {
     gap: 50px;
     padding: 20px 0px;
+  }
+
+  .contact .container .contact-container .form input,
+  .contact .container .contact-container .form textarea {
+    font-size: 20px;
   }
 }

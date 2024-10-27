@@ -1,7 +1,7 @@
 .intro {
   position: relative;
   background-image: url("../images/home-image.jpg");
-  height: 650px;
+  height: 70vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -51,14 +51,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 0px;
+  margin-top: 120px;
 }
 
 .about__container {
   display: grid;
   grid-template-columns: 4fr 5fr;
   max-width: 1300px;
-  width: calc(100% - 10px);
+  width: calc(100% - 30px);
   gap: 40px;
 }
 
@@ -89,14 +89,14 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin: 100px 0;
+  margin: 120px 0;
 }
 
 .home__cards .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1300px;
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
   gap: 20px;
 }
 
@@ -217,7 +217,7 @@
 
   .about__text {
     align-items: center;
-    text-align: center;
+    text-align: justify;
   }
 
   .about__video {
@@ -240,6 +240,7 @@
 
   .home__cards .container .card h2 {
     font-size: 25px;
+    margin-bottom: 5px;
   }
 
   .home__cards .container .card p {
@@ -247,7 +248,8 @@
   }
 
   .home__testimonials .testimonial-swiper {
-    padding: 20px 5px;
+    padding: 0px 5px;
+    margin-bottom: -20px;
   }
 
   .home__testimonials .testimonial-swiper .testimonial-card {
@@ -255,11 +257,13 @@
     flex-direction: column;
     margin: 20px 5px;
     padding: 20px 15px;
-    justify-content: center;
+    height: 250px;
+    gap: 10px;
   }
 
   .home__testimonials .testimonial-swiper .testimonial-card p {
     font-size: 20px;
+    margin: auto 0;
   }
 
   .testimonial-card .person img {
