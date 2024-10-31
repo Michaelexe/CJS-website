@@ -59,6 +59,17 @@
   margin: 0 auto;
   padding: 5px 50px;
   font-size: 30px;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+.contact .container .contact-container .form button:hover:enabled {
+  scale: 1.1;
+}
+
+.contact .container .contact-container .form button:disabled {
+  background-color: gray;
+  cursor: unset;
 }
 
 .contact .container .contact-container .contact-info {
