@@ -185,6 +185,13 @@
   color: var(--accent);
 }
 
+.testimonial-card .person p {
+  color: gray;
+  font-size: 18px;
+  line-height: 19px;
+  overflow: hidden;
+}
+
 .testimonial-card .person img {
   height: 100px;
   width: 100px;
