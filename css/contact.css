@@ -80,6 +80,12 @@
   fill: var(--accent);
 }
 
+@media (max-width: 900px) {
+  .contact .container .contact-container .form {
+    padding: 0px 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .contact .header {
     margin: 0 auto;

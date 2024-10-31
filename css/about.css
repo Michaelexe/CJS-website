@@ -259,7 +259,7 @@
   grid-column: span 2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .about__intro h1 {
     font-size: 45px;
   }

@@ -70,6 +70,22 @@ footer .container .nav-links a {
   text-transform: uppercase;
 }
 
+@media (max-width: 900px) {
+  footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer .container .nav-links {
+    gap: 20px;
+    display: none;
+  }
+
+  footer .container .contact-info {
+    border-right: none;
+    text-align: right;
+  }
+}
+
 @media (max-width: 600px) {
   footer {
     padding: 40px 10px;
@@ -87,13 +103,7 @@ footer .container .nav-links a {
 
   footer .container .contact-info {
     gap: 50px;
-    border-right: none;
     border-top: 4px solid var(--accent);
     padding: 40px;
-  }
-
-  footer .container .nav-links {
-    gap: 20px;
-    display: none;
   }
 }
