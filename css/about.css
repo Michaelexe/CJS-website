@@ -6,7 +6,7 @@
   height: 350px;
   background-image: url(../images/about-intro.jpeg);
   background-size: cover;
-  background-position: 0 22%;
+  background-position: 50% 22%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
