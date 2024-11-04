@@ -84,11 +84,15 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  color: white;
 }
 
 .contact .container .contact-container .contact-info > div svg {
   fill: var(--accent);
+}
+
+.contact .container .contact-container .contact-info > div span {
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
