@@ -48,10 +48,6 @@ footer .container .column .socials a svg {
   width: 100%;
 }
 
-footer .container .contact-info {
-  border-right: 4px solid var(--accent);
-}
-
 footer .container .contact-info h2 {
   font-size: 24px;
   color: var(--accent);
@@ -59,6 +55,10 @@ footer .container .contact-info h2 {
 
 footer .container .contact-info p {
   font-size: 20px;
+}
+
+footer .container .nav-links {
+  border-left: 4px solid var(--accent);
 }
 
 footer .container .nav-links a {
