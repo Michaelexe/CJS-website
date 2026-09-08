@@ -54,3 +54,23 @@ window.CJSBlog = {
   loadBlogPosts,
   stripHtml,
 };
+
+function markdownToHtml(markdown) {
+  if (!markdown || typeof markdown !== "string") {
+    return "";
+  }
+
+  if (typeof marked === "undefined") {
+    console.warn("marked.js not loaded");
+    return escapeHtml(markdown);
+  }
+
+  try {
+    return marked.parse(markdown);
+  } catch (error) {
+    console.error("Markdown parsing error:", error);
+    return escapeHtml(markdown);
+  }
+}
+
+window.CJSBlog.markdownToHtml = markdownToHtml;

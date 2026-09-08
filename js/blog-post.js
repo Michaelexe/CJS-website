@@ -40,7 +40,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     metaEl.textContent = `${window.CJSBlog.formatDate(post.publishedAt)} | ${post.author || "Coach Jules"}`;
     imageEl.src = post.coverImage || "/images/home-image.jpg";
     imageEl.alt = post.title;
-    contentEl.innerHTML = post.content || "<p>No content available.</p>";
+    // Convert markdown to HTML if content is markdown
+    if (window.CJSBlog.markdownToHtml) {
+      contentEl.innerHTML =
+        window.CJSBlog.markdownToHtml(post.content) ||
+        "<p>No content available.</p>";
+    } else {
+      contentEl.innerHTML = "<p>No content available.</p>";
+    }
     document.title = `${post.title} | CJS Coach Jules`;
   } catch (error) {
     titleEl.textContent = "Unable to load post";

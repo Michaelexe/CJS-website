@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
+    // Hide blog section if fewer than 3 posts
+    if (posts.length < 3) {
+      const blogSection = container.closest(".home__blog");
+      if (blogSection) {
+        blogSection.style.display = "none";
+      }
+      return;
+    }
     container.innerHTML = recentPosts
       .map((post) => {
         const excerpt =
