@@ -20,6 +20,9 @@ function sanitizeSlug(slug) {
 
 async function readJson(filePath) {
   const raw = await fs.readFile(filePath, "utf8");
+  if (!raw.trim()) {
+    return { posts: [] };
+  }
   return JSON.parse(raw);
 }
 

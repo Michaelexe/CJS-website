@@ -1,7 +1,40 @@
 media:
-  input: images/blog
-  output: /images/blog
+  - name: images
+    label: Blog Images
+    input: images/blog
+    output: /images/blog
+    categories: [image]
+  - name: downloads
+    label: Download Files
+    input: downloads
+    output: /downloads
+    categories: [document]
 content:
+  - name: site
+    label: Site Settings
+    type: file
+    path: content/site.json
+    fields:
+      - name: navbar
+        label: Navbar
+        type: object
+        fields:
+          - name: download
+            label: Download Button
+            type: object
+            fields:
+              - name: enabled
+                label: Show Download Button
+                type: boolean
+              - name: label
+                label: Button Label
+                type: string
+              - name: file
+                label: Download File
+                type: file
+                options:
+                  media: downloads
+                  categories: [document]
   - name: blog
     label: Blog Posts
     type: file
@@ -30,6 +63,11 @@ content:
           - name: coverImage
             label: Cover Image
             type: image
+            options:
+              media: images
           - name: content
             label: Content
             type: rich-text
+            options:
+              media: images
+              categories: [image]

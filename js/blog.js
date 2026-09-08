@@ -33,13 +33,14 @@ function getPostUrl(slug) {
 }
 
 async function loadBlogPosts() {
-  const response = await fetch(BLOG_DATA_URL);
+  const response = await fetch(BLOG_DATA_URL, { cache: "no-store" });
 
   if (!response.ok) {
     throw new Error(`Failed to load blog data (${response.status})`);
   }
 
-  const data = await response.json();
+  const raw = await response.text();
+  const data = raw.trim() ? JSON.parse(raw) : { posts: [] };
   const posts = Array.isArray(data.posts) ? data.posts : [];
 
   return posts
