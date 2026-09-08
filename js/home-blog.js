@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const recentPosts = posts.slice(0, 3);
 
     if (!recentPosts.length) {
-      container.innerHTML = "<p>No blog posts published yet.</p>";
+      const blogSection = container.closest(".home__blog");
+      if (blogSection) {
+        blogSection.style.display = "none";
+      }
       return;
     }
 
