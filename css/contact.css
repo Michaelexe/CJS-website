@@ -18,8 +18,9 @@
 
 .contact .container .contact-container {
   position: relative;
-  display: grid;
-  grid-template-columns: 5fr 4fr;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-image: url(../images/contact-bg.jpg);
   padding: 60px 0px;
   background-position: center;
@@ -38,59 +39,19 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.contact .container .contact-container .form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-right: 4px solid var(--accent);
-  padding: 0px 60px;
-  z-index: 2;
-}
-
-.contact .container .contact-container .form input,
-.contact .container .contact-container .form textarea {
-  padding: 10px 20px;
-  font-size: 25px;
-  resize: none;
-  border: none;
-}
-
-.contact .container .contact-container .form button {
-  margin: 0 auto;
-  padding: 5px 50px;
-  font-size: 30px;
-  cursor: pointer;
-  transition: all 100ms ease-in;
-}
-
-.contact .container .contact-container .form button:hover:enabled {
-  scale: 1.1;
-}
-
-.contact .container .contact-container .form button:disabled {
-  background-color: gray;
-  cursor: unset;
-}
-
-.contact .container .contact-container .contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  z-index: 2;
-}
-
-.contact .container .contact-container .contact-info > div {
+.contact .container .contact-container > div {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.contact .container .contact-container .contact-info > div svg {
+.contact .container .contact-container > div svg {
   fill: var(--accent);
 }
 
-.contact .container .contact-container .contact-info > div span {
+.contact .container .contact-container > div span {
   color: white;
   text-decoration: none;
 }
@@ -125,7 +86,7 @@
     border-bottom: 4px solid var(--accent);
   }
 
-  .contact .container .contact-container .contact-info {
+  .contact .container .contact-container {
     gap: 50px;
     padding: 20px 0px;
   }

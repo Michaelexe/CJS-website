@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -51,6 +51,7 @@
         <a class="active">Home</a>
         <a href="/about">About Me</a>
         <a href="/services">Services</a>
+        <a href="/blog">Blog</a>
       </div>
       <a href="#contact" type="button" class="button">Contact Us</a>
       <svg
@@ -79,6 +80,7 @@
         <a class="active">Home</a>
         <a href="./about">About</a>
         <a href="./services">Services</a>
+        <a href="./blog">Blog</a>
       </div>
     </nav>
     <section class="intro">
@@ -375,129 +377,597 @@
         </swiper-slide>
       </swiper-container>
     </section>
+    <section class="home__blog">
+      <div class="container">
+        <div class="home__blog-header">
+          <h1>Latest Blog Posts</h1>
+          <a class="green-button" href="/blog">See More</a>
+        </div>
+        <div id="recent-blog-posts" class="home__blog-grid"></div>
+      </div>
+    </section>
+    <section class="home__faq">
+      <div class="container">
+        <h1 class="header">Frequently Asked Questions</h1>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            What is soccer performance training?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              Soccer performance training develops the physical qualities that
+              support performance on the field, including speed, strength,
+              power, agility, coordination and resilience.
+            </p>
+            <p>
+              While team practices focus primarily on technical and tactical
+              development, performance training helps soccer players build the
+              physical tools needed to run faster, change direction effectively,
+              compete physically and tolerate the demands of the game.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            What age should soccer players start strength training?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              There is not one specific age when every athlete should begin
+              strength training. When properly coached and appropriately
+              progressed, youth athletes can safely participate in strength
+              training from as early as age 10.
+            </p>
+            <p>
+              For younger athletes, the focus is on developing movement
+              competency, coordination, body control and confidence before
+              gradually introducing greater resistance.
+            </p>
+            <p>
+              The goal is not to train a 12-year-old like a professional player.
+              It is to build the physical foundation they need for the next
+              stage of their development.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            Will strength training make a soccer player slow or bulky?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              No. Properly designed strength training will help soccer players
+              become stronger, more powerful and more physically capable.
+            </p>
+            <p>
+              The goal of strength training for soccer is not bodybuilding.
+              Training should complement the demands of the sport and help
+              athletes produce and tolerate higher forces.
+            </p>
+            <p>
+              Becoming stronger can support qualities such as acceleration,
+              sprinting, jumping, change of direction and physical robustness
+              when combined with appropriate soccer and speed training.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            How can soccer players get faster?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>A complete speed-development program should include:</p>
+            <ul>
+              <li>Acceleration training</li>
+              <li>Maximum-speed sprinting</li>
+              <li>Proper sprint mechanics</li>
+              <li>Strength development</li>
+              <li>Power development</li>
+              <li>Plyometrics</li>
+            </ul>
+            <p>
+              Speed should be trained consistently rather than something players
+              only work on before tryouts or preseason.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            How often should soccer players strength train?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              For many youth and competitive soccer players, 1-3
+              strength-training sessions per week can be effective depending on
+              their age, training history, competition schedule and goals.
+            </p>
+            <p>More training is not automatically better.</p>
+            <p>
+              The right amount of training should complement soccer practices
+              and matches while still allowing the athlete to recover and
+              perform.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            Does my child need performance training if they already practice
+            soccer several times per week?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>Potentially.</p>
+            <p>
+              Soccer practice is essential for developing technical ability,
+              tactical understanding and decision-making. However, team practice
+              may not provide enough dedicated exposure to strength,
+              maximum-speed sprinting, power or progressive physical
+              development.
+            </p>
+            <p>
+              Performance training is designed to complement soccer by
+              developing physical qualities that receive less attention during
+              regular team training.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            What happens during a soccer performance assessment?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              Performance assessments help me understand an athlete's current
+              physical abilities before developing their training program.
+            </p>
+            <p>
+              Depending on the athlete, assessments may include measures of:
+            </p>
+            <ul>
+              <li>Strength</li>
+              <li>Jump performance</li>
+              <li>Speed and acceleration</li>
+              <li>Change of direction</li>
+              <li>Reactive ability</li>
+              <li>Movement quality</li>
+              <li>Mobility</li>
+            </ul>
+            <p>
+              This information is then used to identify strengths, potential
+              limitations and where training may have the greatest impact.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            What is ForceDecks testing and why do you use it?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              VALD ForceDecks are force plates that allow us to measure how an
+              athlete produces and absorbs force during movements such as
+              jumping.
+            </p>
+            <p>
+              Rather than only looking at how high an athlete jumps, ForceDecks
+              can provide additional information about force production,
+              strategy, asymmetries and other characteristics of performance.
+            </p>
+            <p>
+              Testing data is combined with coaching observations and the
+              athlete's training history to make more informed programming
+              decisions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            Can performance training help reduce injury risk in soccer players?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              No training program can guarantee that an athlete will not get
+              injured.
+            </p>
+            <p>
+              However, a well-designed strength and conditioning program can
+              help athletes develop the strength, capacity, movement skills and
+              exposure to high-speed demands required by soccer.
+            </p>
+            <p>
+              The goal is to prepare the athlete's body for the demands they
+              will experience during practices and matches rather than trying to
+              eliminate injury risk entirely.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            What is the difference between physiotherapy and
+            return-to-performance training?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              Physiotherapy and performance training can play different but
+              complementary roles during an athlete's return from injury.
+            </p>
+            <p>
+              Physiotherapy typically focuses on rehabilitation, restoring
+              function and addressing the injury itself.
+            </p>
+            <p>
+              Return-to-performance training helps bridge the gap between
+              rehabilitation and the physical demands of sport by progressively
+              reintroducing qualities such as strength, sprinting, jumping,
+              cutting, decelerating and conditioning.
+            </p>
+            <p>
+              Being pain-free or cleared from rehabilitation does not always
+              mean an athlete is immediately prepared for full-speed
+              competition.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            Do you offer performance training specifically for soccer players?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              Yes. I provide soccer performance training in Brampton, Ontario
+              for youth, competitive, collegiate and higher-level players.
+            </p>
+            <p>Training targets areas such as:</p>
+            <p>
+              Speed, Strength, Power, Agility, Athletic Development, Performance
+              Testing, Return to Performance.
+            </p>
+            <p>
+              Programs are designed to complement each player's schedule and
+              address their individual development needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            What is semi-private performance training?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              Semi-private training allows a small group of athletes to train
+              together while still following programming appropriate for their
+              individual needs.
+            </p>
+            <p>
+              Athletes benefit from the energy and competitiveness of a group
+              environment without everyone being required to perform the exact
+              same workout.
+            </p>
+            <p>
+              This is especially valuable when athletes differ in age, training
+              experience, physical strengths or development priorities.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            Is performance training only for elite soccer players?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>No.</p>
+            <p>
+              An athlete does not need to be a professional or college player to
+              benefit from structured physical development.
+            </p>
+            <p>
+              Performance training can be appropriate for developing players who
+              want to get faster, become stronger, prepare for a higher level of
+              competition or build the physical foundation needed for long-term
+              development.
+            </p>
+            <p>
+              The training should meet the athlete where they are, not where
+              they are expected to be years from now.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            How is your program different from a regular gym or personal
+            trainer?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              Instead of giving every athlete the same workout, I consider their
+              sport, age, training experience, competition schedule, assessment
+              results and individual goals.
+            </p>
+            <p>
+              The goal is not to make workouts difficult. It is to understand
+              what each athlete needs and why we are training it so their time
+              in the gym supports performance outside of it.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__accordion">
+          <button class="accordion" type="button">
+            Where can I find soccer performance training near Brampton and
+            Mississauga?
+            <svg
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.9999 53.6932L10.1533 26.8466L14.5132 22.4868L36.9999 44.9735L59.4867 22.4868L63.8465 26.8466L36.9999 53.6932Z"
+                fill="#171717"
+              />
+            </svg>
+          </button>
+          <div class="panel">
+            <p>
+              I provide soccer strength, speed and performance training in
+              Brampton, Ontario, serving athletes from Brampton, Mississauga and
+              surrounding areas of the Greater Toronto Area.
+            </p>
+            <p>
+              I work with developing and competitive soccer players looking to
+              improve their physical performance through structured,
+              individualized training.
+            </p>
+            <p>
+              If you are unsure which training option is right for you or your
+              child, contact me to book an assessment or discuss your goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="contact" class="contact">
       <div class="container">
         <h1 class="header">Contact Us</h1>
         <div class="contact-container">
-          <form class="form">
-            <input
-              name="Full Name"
-              type="text"
-              placeholder="Full Name"
-              pattern="^[a-zA-Z\s]+$"
-              required
-            />
-            <input
-              name="Email Address"
-              type="email"
-              placeholder="Email Address"
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-              required
-            />
-            <input
-              name="Phone Number"
-              type="text"
-              placeholder="Phone Number"
-              pattern="^(\+?[1-9]\d{1,14})?$"
-              required
-            />
-            <textarea
-              name="Description"
-              placeholder="Description (Training goals, timings, etc.)"
-              rows="5"
-              required
-            ></textarea>
-            <button class="green-button" type="submit">Submit</button>
-          </form>
-          <div class="contact-info">
-            <div>
-              <svg
-                width="46"
-                height="46"
-                viewBox="0 0 46 46"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M21.1978 1.98137C31.422 1.12869 40.0347 8.82127 40.2501 18.74L40.2505 18.7815C40.2505 22.2486 39.1645 25.4889 37.2397 28.2716L37.2205 28.2988L27.4922 41.8525C27.4729 41.8795 27.4529 41.9058 27.4322 41.9318C25.1961 44.7291 20.7981 44.9012 18.6494 41.8442L8.91797 28.2859C6.38127 24.6894 5.04827 20.1488 6.12625 15.3434C7.45547 8.13799 13.7382 2.83366 21.1393 1.98716C21.1587 1.98493 21.1783 1.983 21.1978 1.98137ZM21.5456 5.79902C15.622 6.48858 10.8649 10.7056 9.89032 16.0698C9.88534 16.0971 9.87976 16.1245 9.87359 16.1516C9.06139 19.7282 10.015 23.1874 12.0461 26.0701L21.7833 39.6364C22.3022 40.3781 23.5963 40.5519 24.4114 39.5708L34.0962 26.0775C35.5951 23.9056 36.413 21.431 36.4172 18.8023C36.2397 11.1774 29.6129 5.14216 21.5456 5.79902Z"
-                  fill="#4CBB17"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M23.0004 15.1412C20.9892 15.1412 19.3587 16.7716 19.3587 18.7828C19.3587 20.7941 20.9892 22.4245 23.0004 22.4245C25.0116 22.4245 26.6421 20.7941 26.6421 18.7828C26.6421 16.7716 25.0116 15.1412 23.0004 15.1412ZM15.5254 18.7828C15.5254 14.6545 18.872 11.3079 23.0004 11.3079C27.1288 11.3079 30.4754 14.6545 30.4754 18.7828C30.4754 22.9112 27.1288 26.2578 23.0004 26.2578C18.872 26.2578 15.5254 22.9112 15.5254 18.7828Z"
-                  fill="#4CBB17"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M23.0004 15.1412C20.9892 15.1412 19.3587 16.7716 19.3587 18.7828C19.3587 20.7941 20.9892 22.4245 23.0004 22.4245C25.0116 22.4245 26.6421 20.7941 26.6421 18.7828C26.6421 16.7716 25.0116 15.1412 23.0004 15.1412ZM15.5254 18.7828C15.5254 14.6545 18.872 11.3079 23.0004 11.3079C27.1288 11.3079 30.4754 14.6545 30.4754 18.7828C30.4754 22.9112 27.1288 26.2578 23.0004 26.2578C18.872 26.2578 15.5254 22.9112 15.5254 18.7828Z"
-                  fill="#4CBB17"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M23.0004 15.1412C20.9892 15.1412 19.3587 16.7716 19.3587 18.7828C19.3587 20.7941 20.9892 22.4245 23.0004 22.4245C25.0116 22.4245 26.6421 20.7941 26.6421 18.7828C26.6421 16.7716 25.0116 15.1412 23.0004 15.1412ZM15.5254 18.7828C15.5254 14.6545 18.872 11.3079 23.0004 11.3079C27.1288 11.3079 30.4754 14.6545 30.4754 18.7828C30.4754 22.9112 27.1288 26.2578 23.0004 26.2578C18.872 26.2578 15.5254 22.9112 15.5254 18.7828Z"
-                  fill="#4CBB17"
-                />
-              </svg>
-              <span>Brampton, Ontario</span>
-            </div>
-            <div>
-              <svg
-                width="46"
-                height="45"
-                viewBox="0 0 46 45"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M6.85208 3.34134C9.3228 0.936097 13.4654 1.6087 15.2146 4.44669L15.2268 4.46643L19.2589 11.1957C20.4462 13.2185 20.1467 15.819 18.3753 17.5435L17.7065 18.1945C20.0744 21.8216 23.6716 25.41 27.3075 27.5622L27.9722 26.987C29.7437 25.3003 32.3879 25.0231 34.4486 26.1694L34.4634 26.1777L41.2866 30.0526C42.976 30.8422 43.865 32.3683 44.0471 33.8918C44.2288 35.4141 43.73 37.0663 42.5167 38.2473L40.2176 40.4856C37.8305 42.8094 33.9444 43.8379 30.6283 42.3705C26.2631 40.6284 19.7163 37.3412 13.7496 31.5326C7.76734 25.7088 4.39523 19.1366 2.62355 15.1162C1.11214 11.8977 2.15365 8.12398 4.52416 5.79423L6.79901 3.39511C6.81634 3.37685 6.83402 3.35891 6.85208 3.34134ZM9.58257 5.95935L7.31558 8.35016C7.29826 8.36843 7.28057 8.38635 7.26251 8.40393C5.82744 9.80096 5.34997 11.965 6.11454 13.5777C6.12192 13.5933 6.12906 13.6089 6.13598 13.6246C7.81571 17.4401 10.9566 23.5379 16.4593 28.8948C21.9717 34.2612 28.0505 37.3135 32.1159 38.9325C32.1419 38.9428 32.1678 38.9538 32.1933 38.9653C33.8499 39.7097 36.0729 39.2448 37.508 37.8478L39.8072 35.6095C40.1266 35.2984 40.2984 34.8056 40.2408 34.3227C40.1867 33.8705 39.9571 33.5607 39.6028 33.4039C39.5437 33.3778 39.4861 33.3487 39.4301 33.317L32.5414 29.405C31.9378 29.0726 31.1637 29.1552 30.6376 29.6674C30.611 29.6932 30.5838 29.7183 30.5557 29.7425L28.8313 31.2347C28.2374 31.7486 27.3794 31.8524 26.6745 31.4955C21.505 28.8786 16.4608 23.7455 13.6244 18.8147C13.2051 18.0859 13.3346 17.1748 13.9413 16.5843L15.6656 14.9057C16.1917 14.3936 16.2765 13.64 15.9351 13.0523L11.9237 6.35796C11.3777 5.48335 10.1829 5.40356 9.58257 5.95935Z"
-                  fill="#4CBB17"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M31.1563 14.4965C30.1952 13.558 28.7108 13.2216 27.6612 13.5632C26.5689 13.9188 25.3884 13.3422 25.0243 12.2756C24.6602 11.209 25.2505 10.0561 26.3427 9.7005C29.0454 8.82071 32.1469 9.70577 34.1043 11.6174C36.0618 13.529 36.9681 16.558 36.0671 19.1974C35.7031 20.2641 34.5226 20.8406 33.4303 20.485C32.3381 20.1295 31.7479 18.9765 32.1119 17.9099C32.4618 16.8847 32.1173 15.4351 31.1563 14.4965Z"
-                  fill="#4CBB17"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M36.3195 9.45396C32.919 6.13309 27.9761 4.96436 23.5471 6.12888C22.5044 6.40302 21.4317 5.7998 21.151 4.78157C20.8702 3.76334 21.4879 2.71566 22.5306 2.44151C28.2679 0.932966 34.6645 2.4373 39.0843 6.75376C43.5042 11.0702 45.0446 17.3171 43.4999 22.9202C43.2192 23.9385 42.1464 24.5417 41.1039 24.2675C40.0612 23.9934 39.4435 22.9458 39.7242 21.9275C40.9167 17.6021 39.7199 12.7748 36.3195 9.45396Z"
-                  fill="#4CBB17"
-                />
-              </svg>
+          <div>
+            <svg
+              width="46"
+              height="46"
+              viewBox="0 0 46 46"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21.1978 1.98137C31.422 1.12869 40.0347 8.82127 40.2501 18.74L40.2505 18.7815C40.2505 22.2486 39.1645 25.4889 37.2397 28.2716L37.2205 28.2988L27.4922 41.8525C27.4729 41.8795 27.4529 41.9058 27.4322 41.9318C25.1961 44.7291 20.7981 44.9012 18.6494 41.8442L8.91797 28.2859C6.38127 24.6894 5.04827 20.1488 6.12625 15.3434C7.45547 8.13799 13.7382 2.83366 21.1393 1.98716C21.1587 1.98493 21.1783 1.983 21.1978 1.98137ZM21.5456 5.79902C15.622 6.48858 10.8649 10.7056 9.89032 16.0698C9.88534 16.0971 9.87976 16.1245 9.87359 16.1516C9.06139 19.7282 10.015 23.1874 12.0461 26.0701L21.7833 39.6364C22.3022 40.3781 23.5963 40.5519 24.4114 39.5708L34.0962 26.0775C35.5951 23.9056 36.413 21.431 36.4172 18.8023C36.2397 11.1774 29.6129 5.14216 21.5456 5.79902Z"
+                fill="#4CBB17"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.0004 15.1412C20.9892 15.1412 19.3587 16.7716 19.3587 18.7828C19.3587 20.7941 20.9892 22.4245 23.0004 22.4245C25.0116 22.4245 26.6421 20.7941 26.6421 18.7828C26.6421 16.7716 25.0116 15.1412 23.0004 15.1412ZM15.5254 18.7828C15.5254 14.6545 18.872 11.3079 23.0004 11.3079C27.1288 11.3079 30.4754 14.6545 30.4754 18.7828C30.4754 22.9112 27.1288 26.2578 23.0004 26.2578C18.872 26.2578 15.5254 22.9112 15.5254 18.7828Z"
+                fill="#4CBB17"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.0004 15.1412C20.9892 15.1412 19.3587 16.7716 19.3587 18.7828C19.3587 20.7941 20.9892 22.4245 23.0004 22.4245C25.0116 22.4245 26.6421 20.7941 26.6421 18.7828C26.6421 16.7716 25.0116 15.1412 23.0004 15.1412ZM15.5254 18.7828C15.5254 14.6545 18.872 11.3079 23.0004 11.3079C27.1288 11.3079 30.4754 14.6545 30.4754 18.7828C30.4754 22.9112 27.1288 26.2578 23.0004 26.2578C18.872 26.2578 15.5254 22.9112 15.5254 18.7828Z"
+                fill="#4CBB17"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.0004 15.1412C20.9892 15.1412 19.3587 16.7716 19.3587 18.7828C19.3587 20.7941 20.9892 22.4245 23.0004 22.4245C25.0116 22.4245 26.6421 20.7941 26.6421 18.7828C26.6421 16.7716 25.0116 15.1412 23.0004 15.1412ZM15.5254 18.7828C15.5254 14.6545 18.872 11.3079 23.0004 11.3079C27.1288 11.3079 30.4754 14.6545 30.4754 18.7828C30.4754 22.9112 27.1288 26.2578 23.0004 26.2578C18.872 26.2578 15.5254 22.9112 15.5254 18.7828Z"
+                fill="#4CBB17"
+              />
+            </svg>
+            <span>Brampton, Ontario</span>
+          </div>
+          <div>
+            <svg
+              width="46"
+              height="45"
+              viewBox="0 0 46 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.85208 3.34134C9.3228 0.936097 13.4654 1.6087 15.2146 4.44669L15.2268 4.46643L19.2589 11.1957C20.4462 13.2185 20.1467 15.819 18.3753 17.5435L17.7065 18.1945C20.0744 21.8216 23.6716 25.41 27.3075 27.5622L27.9722 26.987C29.7437 25.3003 32.3879 25.0231 34.4486 26.1694L34.4634 26.1777L41.2866 30.0526C42.976 30.8422 43.865 32.3683 44.0471 33.8918C44.2288 35.4141 43.73 37.0663 42.5167 38.2473L40.2176 40.4856C37.8305 42.8094 33.9444 43.8379 30.6283 42.3705C26.2631 40.6284 19.7163 37.3412 13.7496 31.5326C7.76734 25.7088 4.39523 19.1366 2.62355 15.1162C1.11214 11.8977 2.15365 8.12398 4.52416 5.79423L6.79901 3.39511C6.81634 3.37685 6.83402 3.35891 6.85208 3.34134ZM9.58257 5.95935L7.31558 8.35016C7.29826 8.36843 7.28057 8.38635 7.26251 8.40393C5.82744 9.80096 5.34997 11.965 6.11454 13.5777C6.12192 13.5933 6.12906 13.6089 6.13598 13.6246C7.81571 17.4401 10.9566 23.5379 16.4593 28.8948C21.9717 34.2612 28.0505 37.3135 32.1159 38.9325C32.1419 38.9428 32.1678 38.9538 32.1933 38.9653C33.8499 39.7097 36.0729 39.2448 37.508 37.8478L39.8072 35.6095C40.1266 35.2984 40.2984 34.8056 40.2408 34.3227C40.1867 33.8705 39.9571 33.5607 39.6028 33.4039C39.5437 33.3778 39.4861 33.3487 39.4301 33.317L32.5414 29.405C31.9378 29.0726 31.1637 29.1552 30.6376 29.6674C30.611 29.6932 30.5838 29.7183 30.5557 29.7425L28.8313 31.2347C28.2374 31.7486 27.3794 31.8524 26.6745 31.4955C21.505 28.8786 16.4608 23.7455 13.6244 18.8147C13.2051 18.0859 13.3346 17.1748 13.9413 16.5843L15.6656 14.9057C16.1917 14.3936 16.2765 13.64 15.9351 13.0523L11.9237 6.35796C11.3777 5.48335 10.1829 5.40356 9.58257 5.95935Z"
+                fill="#4CBB17"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M31.1563 14.4965C30.1952 13.558 28.7108 13.2216 27.6612 13.5632C26.5689 13.9188 25.3884 13.3422 25.0243 12.2756C24.6602 11.209 25.2505 10.0561 26.3427 9.7005C29.0454 8.82071 32.1469 9.70577 34.1043 11.6174C36.0618 13.529 36.9681 16.558 36.0671 19.1974C35.7031 20.2641 34.5226 20.8406 33.4303 20.485C32.3381 20.1295 31.7479 18.9765 32.1119 17.9099C32.4618 16.8847 32.1173 15.4351 31.1563 14.4965Z"
+                fill="#4CBB17"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M36.3195 9.45396C32.919 6.13309 27.9761 4.96436 23.5471 6.12888C22.5044 6.40302 21.4317 5.7998 21.151 4.78157C20.8702 3.76334 21.4879 2.71566 22.5306 2.44151C28.2679 0.932966 34.6645 2.4373 39.0843 6.75376C43.5042 11.0702 45.0446 17.3171 43.4999 22.9202C43.2192 23.9385 42.1464 24.5417 41.1039 24.2675C40.0612 23.9934 39.4435 22.9458 39.7242 21.9275C40.9167 17.6021 39.7199 12.7748 36.3195 9.45396Z"
+                fill="#4CBB17"
+              />
+            </svg>
 
-              <span>647-562-9886</span>
-            </div>
-            <div>
-              <svg
-                width="51"
-                height="50"
-                viewBox="0 0 51 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M11.9367 10.383C9.02283 10.383 6.375 12.9306 6.375 16.5515V33.2683C6.375 36.8893 9.02283 39.4369 11.9367 39.4369H39.2673C42.1903 39.4369 44.7825 36.8974 44.6178 33.3627C44.6162 33.3313 44.6155 33.2997 44.6155 33.2683V16.5515C44.6155 12.9306 41.9676 10.383 39.0538 10.383H11.9367ZM2.125 16.5515C2.125 11.0127 6.3098 6.23242 11.9367 6.23242H39.0538C44.6807 6.23242 48.8655 11.0127 48.8655 16.5515V33.2236C49.1005 38.8272 44.8685 43.5874 39.2673 43.5874H11.9367C6.3098 43.5874 2.125 38.8072 2.125 33.2683V16.5515Z"
-                  fill="#4CBB17"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.9016 15.5859C11.4803 14.5888 12.7771 14.2385 13.7981 14.8036L23.7405 20.3063C24.8915 20.9107 26.1092 20.9107 27.2602 20.3063L37.2027 14.8036C38.2236 14.2385 39.5205 14.5888 40.0992 15.5859C40.6777 16.583 40.3192 17.8494 39.298 18.4146L29.3372 23.9275L29.3032 23.9459C26.878 25.2316 24.1227 25.2316 21.6975 23.9459L21.6635 23.9275L11.7026 18.4146C10.6816 17.8494 10.323 16.583 10.9016 15.5859Z"
-                  fill="#4CBB17"
-                />
-              </svg>
+            <span>647-562-9886</span>
+          </div>
+          <div>
+            <svg
+              width="51"
+              height="50"
+              viewBox="0 0 51 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.9367 10.383C9.02283 10.383 6.375 12.9306 6.375 16.5515V33.2683C6.375 36.8893 9.02283 39.4369 11.9367 39.4369H39.2673C42.1903 39.4369 44.7825 36.8974 44.6178 33.3627C44.6162 33.3313 44.6155 33.2997 44.6155 33.2683V16.5515C44.6155 12.9306 41.9676 10.383 39.0538 10.383H11.9367ZM2.125 16.5515C2.125 11.0127 6.3098 6.23242 11.9367 6.23242H39.0538C44.6807 6.23242 48.8655 11.0127 48.8655 16.5515V33.2236C49.1005 38.8272 44.8685 43.5874 39.2673 43.5874H11.9367C6.3098 43.5874 2.125 38.8072 2.125 33.2683V16.5515Z"
+                fill="#4CBB17"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.9016 15.5859C11.4803 14.5888 12.7771 14.2385 13.7981 14.8036L23.7405 20.3063C24.8915 20.9107 26.1092 20.9107 27.2602 20.3063L37.2027 14.8036C38.2236 14.2385 39.5205 14.5888 40.0992 15.5859C40.6777 16.583 40.3192 17.8494 39.298 18.4146L29.3372 23.9275L29.3032 23.9459C26.878 25.2316 24.1227 25.2316 21.6975 23.9459L21.6635 23.9275L11.7026 18.4146C10.6816 17.8494 10.323 16.583 10.9016 15.5859Z"
+                fill="#4CBB17"
+              />
+            </svg>
 
-              <span>coachjulesperformance@gmail.com</span>
-            </div>
+            <span>coachjulesperformance@gmail.com</span>
           </div>
         </div>
       </div>
@@ -572,6 +1042,7 @@
           <a href="">Home</a>
           <a href="/about">About Us</a>
           <a href="/services">Services</a>
+          <a href="/blog">Blog</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -593,6 +1064,9 @@
       });
       swiperEl.initialize();
     </script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/blog.js"></script>
+    <script src="./js/home-blog.js"></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/form.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -614,7 +1088,7 @@
               {
                 scrollTop: $(hash).offset().top - 100,
               },
-              800
+              800,
             );
           } // End if
         });
