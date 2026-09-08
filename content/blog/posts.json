@@ -1,3 +1,12 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "slug": "Test Blog 1",
+      "title": "Test Blog 1",
+      "publishedAt": "2026-09-07",
+      "author": "michaelexe",
+      "coverImage": "/images/blog/logo.png",
+      "content": "# test\n\n## test\n\n### test\n\n- asdf\n- adsf\n- adf\n\n1. asdfasd\n2. asdf\n3. asdf\n\n![](/images/blog/wallpaperflare.com_wallpaper.jpg)\n\n"
+    }
+  ]
 }
