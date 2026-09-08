@@ -1,0 +1,35 @@
+media:
+  input: images/blog
+  output: /images/blog
+content:
+  - name: blog
+    label: Blog Posts
+    type: file
+    path: content/blog/posts.json
+    fields:
+      - name: posts
+        label: Posts
+        type: object
+        list: true
+        fields:
+          - name: slug
+            label: Slug
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: publishedAt
+            label: Publish Date
+            type: date
+          - name: author
+            label: Author
+            type: string
+          - name: excerpt
+            label: Excerpt
+            type: text
+          - name: coverImage
+            label: Cover Image
+            type: image
+          - name: content
+            label: Content
+            type: rich-text
