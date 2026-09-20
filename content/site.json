@@ -1,7 +1,7 @@
 {
   "navbar": {
     "download": {
-      "enabled": true,
+      "enabled": false,
       "label": "Download Program",
       "file": "/downloads/Resume.pdf"
     }
