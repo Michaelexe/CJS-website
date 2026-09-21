@@ -2,8 +2,7 @@
   "navbar": {
     "download": {
       "enabled": false,
-      "label": "Download Program",
-      "file": "/downloads/Resume.pdf"
+      "label": "Download Program"
     }
   }
 }
