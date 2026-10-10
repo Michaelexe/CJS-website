@@ -1,0 +1,43 @@
+{
+  "eyebrow": "CJS Performance",
+  "title": "The Complete Soccer Performance Program",
+  "subtitle": "A practical training plan to help soccer players build the strength, speed and confidence they need to perform at their best.",
+  "heroImage": "/images/performance-card.jpg",
+  "intro": "This program gives you a clear, structured path to improve the physical qualities that matter most on the soccer field. Each phase is designed to complement soccer practice while helping you train with purpose.",
+  "highlights": [
+    {
+      "title": "Build strength",
+      "description": "Develop the force and control needed to sprint, jump, change direction and compete."
+    },
+    {
+      "title": "Move with confidence",
+      "description": "Improve coordination, mobility and athletic movement so you can play freely."
+    },
+    {
+      "title": "Train with purpose",
+      "description": "Follow a progressive plan that fits alongside your practices, matches and recovery."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Who this program is for",
+      "content": "This program is designed for developing and competitive soccer players who want a clear plan for improving their physical performance. It can be adapted to different ages, training histories and competition schedules."
+    },
+    {
+      "title": "What you will work on",
+      "content": "- Strength and power\n- Acceleration and sprint mechanics\n- Change of direction and agility\n- Mobility, coordination and resilience\n- Recovery and training consistency"
+    }
+  ],
+  "download": {
+    "backgroundImage": "/images/about-intro.jpeg",
+    "label": "Download the program",
+    "description": "Get the complete program guide and start building your plan today.",
+    "file": "/downloads/soccer-performance-program.pdf"
+  },
+  "cta": {
+    "title": "Ready to train with a plan?",
+    "text": "Reach out to discuss your goals and find the right next step for your development.",
+    "buttonLabel": "Contact Coach Jules",
+    "buttonHref": "/#contact"
+  }
+}

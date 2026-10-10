@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/program.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+    <meta name="description" content="Explore the CJS Performance soccer training program." />
+    <title>Program | CJS Coach Jules</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="../images/logo.png" alt="Logo" />
+      <div class="navbar__links">
+        <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/services">Services</a>
+        <a href="/program" class="active" data-program-link>Program</a>
+        <a href="/blog">Blog</a>
+      </div>
+      <div><a href="/#contact" type="button" class="button">Contact Us</a></div>
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu" aria-label="Open menu">
+        <path d="M4 12H20M4 8H20M4 16H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <div class="menu-dropdown">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/program" class="active" data-program-link>Program</a>
+        <a href="/blog">Blog</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="program-hero">
+        <div class="program-hero__content">
+          <p class="program-hero__eyebrow" data-program-eyebrow></p>
+          <h1 data-program-title>Loading program...</h1>
+          <p data-program-subtitle></p>
+          <a class="green-button program-hero__download" data-program-download href="#" download></a>
+        </div>
+      </section>
+
+      <section class="program-section">
+        <div class="container">
+          <div class="program-intro" data-program-intro></div>
+        </div>
+      </section>
+
+      <section class="program-section program-highlights">
+        <div class="container" data-program-highlights></div>
+      </section>
+
+      <section class="program-section">
+        <div class="container program-content" data-program-sections></div>
+      </section>
+
+      <section class="program-section program-download">
+        <div class="container">
+          <div>
+            <h2>Take the next step</h2>
+            <p data-program-download-description></p>
+          </div>
+          <a class="green-button program-download__link" data-program-download-secondary href="#" download></a>
+        </div>
+      </section>
+
+      <section class="program-cta">
+        <div class="container">
+          <h2 data-program-cta-title></h2>
+          <p data-program-cta-text></p>
+          <a class="green-button" data-program-cta-link href="/#contact"></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="column">
+          <div><img src="../images/logo.png" alt="" /></div>
+          <p>Let's elevate your fitness journey, master new skills and achieve your goals. Let's make real progress together!</p>
+        </div>
+        <div class="column contact-info">
+          <div><h2>Location:</h2><p>Brampton, Ontario</p></div>
+          <div><h2>Contact us:</h2><p>coachjulesperformance@gmail.com</p><p>647-562-9886</p></div>
+        </div>
+        <div class="column nav-links">
+          <a href="/">Home</a><a href="/about">About Us</a><a href="/services">Services</a><a href="/program" data-program-link>Program</a><a href="/blog">Blog</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/blog.js"></script>
+    <script src="../js/program.js"></script>
+    <script src="../js/navbar.js"></script>
+  </body>
+</html>

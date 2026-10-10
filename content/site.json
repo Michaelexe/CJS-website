@@ -1,9 +1,0 @@
-{
-  "navbar": {
-    "download": {
-      "enabled": false,
-      "label": "Download",
-      "file": ""
-    }
-  }
-}

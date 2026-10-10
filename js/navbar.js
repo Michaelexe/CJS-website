@@ -12,39 +12,37 @@ if (menuButton && menu) {
   });
 }
 
-async function loadDownloadButton() {
-  const buttons = document.querySelectorAll("[data-download-button]");
+async function updateProgramLinks() {
+  const links = document.querySelectorAll("[data-program-link]");
 
-  if (!buttons.length) {
+  if (!links.length) {
     return;
   }
 
   try {
-    const response = await fetch("/content/site.json");
+    const response = await fetch("/content/program.json", { cache: "no-store" });
     if (!response.ok) {
-      throw new Error(`Failed to load site settings (${response.status})`);
+      throw new Error(`Failed to load program content (${response.status})`);
     }
 
-    const settings = await response.json();
-    const download = settings.navbar?.download;
-    const isVisible = download?.enabled && download?.file;
+    const raw = await response.text();
+    const program = raw.trim() ? JSON.parse(raw) : {};
+    const hasContent =
+      program &&
+      typeof program === "object" &&
+      (program.title || program.subtitle || program.intro);
 
-    buttons.forEach((button) => {
-      if (!isVisible) {
-        button.hidden = true;
-        return;
-      }
-
-      button.textContent = download.label || "Download";
-      button.href = download.file;
-      button.hidden = false;
-    });
+    if (!hasContent) {
+      links.forEach((link) => {
+        link.hidden = true;
+      });
+    }
   } catch (error) {
-    buttons.forEach((button) => {
-      button.hidden = true;
+    links.forEach((link) => {
+      link.hidden = true;
     });
     console.error(error);
   }
 }
 
-loadDownloadButton();
+updateProgramLinks();

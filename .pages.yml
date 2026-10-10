@@ -10,31 +10,93 @@ media:
     output: /downloads
     categories: [document]
 content:
-  - name: site
-    label: Site Settings
+  - name: program
+    label: Program Page
     type: file
-    path: content/site.json
+    path: content/program.json
     fields:
-      - name: navbar
-        label: Navbar
+      - name: eyebrow
+        label: Eyebrow
+        type: string
+      - name: title
+        label: Title
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: text
+      - name: heroImage
+        label: Hero Image
+        type: image
+        options:
+          media: images
+      - name: intro
+        label: Introduction
+        type: rich-text
+        options:
+          media: images
+          categories: [image]
+      - name: highlights
+        label: Program Highlights
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+      - name: sections
+        label: Program Sections
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Section Title
+            type: string
+          - name: content
+            label: Content
+            type: rich-text
+            options:
+              media: images
+              categories: [image]
+      - name: download
+        label: Download
         type: object
         fields:
-          - name: download
-            label: Download Button
-            type: object
-            fields:
-              - name: enabled
-                label: Show Download Button
-                type: boolean
-              - name: label
-                label: Button Label
-                type: string
-              - name: file
-                label: Download File
-                type: file
-                options:
-                  media: downloads
-                  categories: [document]
+          - name: backgroundImage
+            label: Background Image
+            type: image
+            options:
+              media: images
+          - name: label
+            label: Button Label
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: file
+            label: Program File
+            type: file
+            options:
+              media: downloads
+              categories: [document]
+      - name: cta
+        label: Call To Action
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: text
+          - name: buttonLabel
+            label: Button Label
+            type: string
+          - name: buttonHref
+            label: Button Link
+            type: string
   - name: blog
     label: Blog Posts
     type: file
